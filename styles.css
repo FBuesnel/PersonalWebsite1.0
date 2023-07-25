@@ -297,6 +297,7 @@ form .btn2{
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
+    margin-left: 15px;
     cursor: pointer;
 }
 #msg{
@@ -345,5 +346,88 @@ footer {
     text-align: center;
     padding: 25px 0;
     font-weight: 300;
-    margin-top 20px;
+    margin-top: 20px;
+}
+
+/* ---CSS for Smaller Screens--- */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #514c4a;
+        position: fixed;
+        top: 0;
+        left: -210px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: left 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .subTitle{
+        font-size: 40px;
+    }
+    .about-column-1, .about-column-2{
+        flex-basis: 100%;
+    }
+    .about-column-1{
+        margin-bottom: 30px;
+    }
+    .about-column-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+
+    /* ---Experience Cards--- */
+    .experienceHeader{
+        font-size: 25px;
+    }
+
+    .card {
+        border: 2px solid #514c4a;
+        border-radius: 10px;
+        margin-top: 5%;
+        width: 100%;
+        background-color: #dad5d2;
+    }
+    
+    .skillCard{
+        border: 2px solid #514c4a;
+        border-radius: 10px;
+        margin-top: 3%;
+        width: 100%;
+        background-color: #dad5d2;
+    }
 }

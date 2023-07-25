@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf99eed891.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link href="styles.css" rel="stylesheet">
     <title>&#129361; Fynn Buesnel</title>
@@ -11,13 +12,15 @@
 <div id="header">
     <div class="container">
         <nav>
-            <ul>
+            <ul id="sidemenu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 <!-- Add more navigation items for other pages -->
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             <div class="logo">
                 <img src="images/logo.png" alt="logo" class="logoImage">
             </div>
@@ -34,7 +37,7 @@
     <div class="container">
         <div class="row">
             <div class="about-column-1">
-                <img src="images/me.jpg" height="600" width="400" style="border:5px solid #514c4a" alt="my photo">
+                <img src="images/me.jpg" width="100%" style="border:5px solid #514c4a" alt="my photo">
             </div>
             <div class="about-column-2">
                 <h1 class="subTitle">About Me</h1>
@@ -103,6 +106,17 @@
         </div>
     </footer>
 </div>
+<script>
+    // For mobile menu
+
+    var sideMenu = document.getElementById("sidemenu");
+    function openmenu(){
+    sideMenu.style.left = "-10px";
+    }
+    function closemenu(){
+    sideMenu.style.left = "-210px";
+    }
+  </script>
 </body>
 
 </html>
