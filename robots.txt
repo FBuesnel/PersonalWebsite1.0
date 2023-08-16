@@ -1,12 +1,4 @@
 User-agent: *
 Disallow: /private/
 Disallow: /admin/
-
-User-agent: Googlebot
-Disallow:
-
-User-agent: AdsBot-Google
-Disallow:
-
-User-agent: Googlebot-Image
-Disallow:
+Disallow: /images/
