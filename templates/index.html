@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block main %}
+<!---------------About---------------->
+<div id="header">
+    <div class="container">
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hey! I'm Fynn Buesnel<br>from San Francisco</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-column-1">
+                <img src="/static/me.jpg" width="100%" style="border:5px solid #514c4a" alt="my photo">
+            </div>
+            <div class="about-column-2">
+                <h1 class="subTitle">About Me</h1>
+                <p style="color:#a4998c;">I am a graduating high school student who has worked in technology for the past two years. In the fall, I will be starting my time at Boston University to pursue a degree in computer science with a focus on AI and machine learning. Below, there is a brief description of my education, experience, and skills. My portfolio and a more descriptive version of these can be found in the tabs above.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents activeTab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web Apps</li>
+                        <li><span>Java/C/Python/Javascript</span><br>Various programming languages I am skilled in.</li>
+                        <li><span>SQL</span><br>Manipulation of datasets.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Summer 2023</span><br>Juicer at Joe & The Juice</li>
+                        <li><span>Summer 2022</span><br>Technology Assistant at Convent & Stuart Hall</li>
+                        <li><span>Summer 2021</span><br>Technology Intern at Convent & Stuart Hall</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-2027</span><br>Degree in Computer Science from Boston University</li>
+                        <li><span>Summer 2023</span><br>Harvard's CS50</li>
+                        <li><span>2019-2023</span><br>High School Diplmoa as Valedictorian from Stuart Hall High School</li>
+                        <li><span>2021-2023</span><br>International Baccalaureate Diploma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
