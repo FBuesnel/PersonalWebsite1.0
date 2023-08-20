@@ -1,4 +1,4 @@
-from flask import Flask, flash, redirect, render_template, request, session
+from flask import Flask, flash, redirect, render_template, request, session, send_from_directory
 from flask_session import Session
 
 app = Flask(__name__)
@@ -18,6 +18,14 @@ def experience():
 @app.route("/portfolio")
 def portfolio():
     return render_template("portfolio.html")
+
+@app.route('/sitemap.xml')
+def serve_sitemap():
+    return send_from_directory(app.root_path, 'sitemap.xml')
+
+@app.route('/robots.txt')
+def serve_robots():
+    return send_from_directory(app.root_path, 'robots.txt')
 
 if __name__ == "__main__":
     app.run(debug=True)
