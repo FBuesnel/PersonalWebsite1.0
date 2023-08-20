@@ -252,6 +252,14 @@ ul li {
     margin-right: 8px;
 }
 
+.pLink {
+    transition: color .5s;
+}
+
+.pLink:hover {
+    color: #d8b26e;
+}
+
 
 
 /* ---Contact--- */
